@@ -1,0 +1,81 @@
+#main {
+  background-image: url(../img/krizovatka.png);
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-route {
+  cursor: pointer;
+}
+
+#route1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin-top: 20%;
+  margin-left: 20%;
+  font-size: 30pt;
+}
+
+#route2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-right: 35%;
+  margin-top: 15%;
+  font-size: 28pt;
+}
+
+#route3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-top: 2%;
+  margin-left: 55%;
+  font-size: 30pt;
+}
+/*Konec stylu křižovatky*/
+
+#back {
+  display: none;
+}
+
+/*Responzivita
+@media all and (max-width: 1080px) {
+    #route1{
+        font-size: 15pt;
+    }
+   
+    #route2 {
+        margin-top: 0%;
+        margin-right: 30%;
+        font-size: 15pt;
+    }
+
+    #route3{
+        font-size: 15pt;
+        margin-top: 15%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #route1{
+        font-size: 12pt;
+    }
+   
+    #route2 {
+        margin-top: 0%;
+        margin-right: 0%;
+        font-size: 12pt;
+    }
+
+    #route3{
+        font-size: 12pt;
+        margin-top: 0%;
+    }
+}
+*/
