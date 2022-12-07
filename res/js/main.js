@@ -4,6 +4,8 @@ const route3 = document.getElementById("route3");
 
 const back = document.getElementById("back");
 
+const rakev = document.getElementById("rakev")
+
 route1.onclick = () => {
   servis.style.backgroundImage = "url(./res/img/servis.png)";
   route1.style.display = "none";
@@ -23,3 +25,7 @@ back.onclick = () => {
   cross.style.display = "block";
   servis.style.display = "none";
 };
+
+rakev.onclick = () => {
+  dead.style.display = "block";
+}

@@ -41,6 +41,8 @@
   height: 1080px;
   display: none;
   background: none;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #back {
@@ -53,22 +55,30 @@
   cursor: pointer;
 }
 
-#dead-info ul {
+#dead ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
 
-#dead-info {
+#dead {
+  display: none;
   background-color: #fff;
   border: 1px #000 solid;
   border-radius: 10px;
   max-width: 40%;
   float: right;
   margin: 1%;
-  margin-top: 35%;
-  margin-right: 20%;
+  margin-top: 25%;
+  margin-right: 25%;
   padding: 1%;
+}
+
+#rakev {
+  width: 15%;
+  margin-top: 37%;
+  margin-left: -18%;
+  cursor: pointer;
 }
 /* Konec stylu oběti */
 
