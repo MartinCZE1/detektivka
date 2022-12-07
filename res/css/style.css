@@ -10,6 +10,15 @@
   background-size: contain;
 }
 
+button:hover {
+  background-color: #C3C3C3;
+  transition: .25s;
+}
+
+button {
+  transition: .25s;
+}
+
 .btn-route {
   cursor: pointer;
   border-radius: 10px;
@@ -45,7 +54,7 @@
   background-repeat: no-repeat;
 }
 
-#back {
+#backservis {
   display: none;
   font-size: 30pt;
   margin-left: 1%;
@@ -82,3 +91,19 @@
 }
 /* Konec stylu oběti */
 
+#hospoda {
+  display: none;
+  height: 1080px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#backhospoda {
+  display: none;
+  font-size: 30pt;
+  margin-left: 1%;
+  margin-top: 1%;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+}
