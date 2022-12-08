@@ -7,19 +7,22 @@ const backhospoda = document.getElementById("backhospoda");
 
 const rakev = document.getElementById("rakev");
 
+const doba = document.getElementById("doba");
+
 route1.onclick = () => {
   servis.style.backgroundImage = "url(./res/img/servis.png)";
   backservis.style.display = "block";
   cross.style.display = "none";
   servis.style.display = "block";
-  hospoda.style.display = "none"
+  hospoda.style.display = "none";
 };
 
 route2.onclick = () => {
-  hospoda.style.backgroundImage = "url(./res/img/hospoda.png)"
+  hospoda.style.backgroundImage = "url(./res/img/hospoda.png)";
   hospoda.style.display = "block";
   cross.style.display = "none";
-  backhospoda.style.display = "block"
+  backhospoda.style.display = "block";
+  doba.style.display = "block";
 };
 
 backservis.onclick = () => {
@@ -40,9 +43,15 @@ backhospoda.onclick = () => {
   backhospoda.style.display = "none";
   cross.style.display = "block";
   servis.style.display = "none";
-  hospoda.style.display = "none"
+  hospoda.style.display = "none";
+  doba.style.display = "none";
+  dobainfo.style.display = "none";
 };
 
 rakev.onclick = () => {
   dead.style.display = "block";
+};
+
+doba.onclick = () => {
+  dobainfo.style.display = "block";
 };

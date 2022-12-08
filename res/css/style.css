@@ -3,6 +3,10 @@
   font-family: sans-serif;
 }
 
+body {
+  cursor: url("../res/img/cursor.png");
+}
+
 #cross {
   background-image: url(../img/krizovatka.png);
   height: 1080px;
@@ -11,12 +15,12 @@
 }
 
 button:hover {
-  background-color: #C3C3C3;
-  transition: .25s;
+  background-color: #c3c3c3;
+  transition: 0.25s;
 }
 
 button {
-  transition: .25s;
+  transition: 0.25s;
 }
 
 .btn-route {
@@ -86,8 +90,8 @@ button {
 #rakev {
   width: 15%;
   margin-top: 37%;
-  margin-left: -18%;
-  cursor: pointer
+  margin-left: -14%;
+  cursor: pointer;
 }
 /* Konec stylu oběti */
 
@@ -106,4 +110,20 @@ button {
   float: left;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#doba {
+  display: none;
+  border: solid 1px #000;
+  width: 10%;
+  margin-left: 85%;
+  margin-top: -38%;
+  cursor: pointer;
+}
+
+#dobainfo {
+  background-color: #fff;
+  display: none;
+  font-size: 16pt;
+  width: fit-content;
 }
