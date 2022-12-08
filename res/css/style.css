@@ -3,10 +3,6 @@
   font-family: sans-serif;
 }
 
-body {
-  cursor: url("../res/img/cursor.png");
-}
-
 #cross {
   background-image: url(../img/krizovatka.png);
   height: 1080px;
