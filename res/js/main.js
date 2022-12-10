@@ -54,4 +54,10 @@ rakev.onclick = () => {
 
 doba.onclick = () => {
   dobainfo.style.display = "block";
+  const dobainterval = setInterval(() => {
+    dobainfo.style.display = "none";
+    if ((dobainfo.style.display = "none")) {
+      clearInterval(dobainterval);
+    }
+  }, 1000);
 };

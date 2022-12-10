@@ -122,6 +122,12 @@ button {
   display: none;
   font-size: 16pt;
   width: fit-content;
+  padding: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 15pt;
+  border-radius: 10px;
+  border: solid #000 1px;
 }
 
 /*Konec stylu hospody*/
