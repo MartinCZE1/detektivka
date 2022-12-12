@@ -13,10 +13,21 @@
     <title>Detektiv Peřina</title>
   </head>
   <body>
+    <div id="vstup">
+      <center>
+        <input type="text" placeholder="Vlož své jméno" id="jmeno" />
+        <button id="jmenobtn">Další</button>
+      </center>
+      <p id="vstuptext"></p>
+      <center>
+        <button id="hrat">Hrát!</button>
+      </center>
+    </div>
+
     <div id="cross">
       <button id="route1" class="btn-route">K oběti</button>
-      <button id="route2" class="btn-route">K podezřelému č. 1</button>
-      <button id="route3" class="btn-route">K podezřelému č. 2</button>
+      <button id="route2" class="btn-route">Do hospody</button>
+      <button id="route3" class="btn-route">-</button>
     </div>
 
     <!--Konec křižovatky-->
@@ -35,7 +46,7 @@
           <br />
           <li>Rodina: ženatý, 8 dětí</li>
           <br />
-          <li>Bydliště: mjr. Plíška 652, Praha 4</li>
+          <li>Bydliště: mjr. Plíška 652, Modřany</li>
           <br />
           <li>Povolání: majitel autoservisu</li>
           <br />
@@ -57,10 +68,10 @@
           </li>
           <br />
           <li>
-            Nepřátelé: Josej Jánský - nezaplatil mu za servis jeho vozu
-            (pravěpodobně to po něm vymáhal), Karel Hojný - konkurence
+            Možní pachatelé: Jaroslav Malý, Karel Kojný, Arnošt Pardubický
           </li>
           <br />
+          <button id="zavritrakev">Zavřít</button>
         </ul>
       </div>
     </div>
@@ -71,7 +82,44 @@
       <button id="backhospoda" class="btn-servis">Zpět na křižovatku</button>
     </div>
 
-    <img src="./res/img/dobaorez.png" alt="Otevírací doba hospody" id="doba" draggable="false"/>
+    <img
+      src="./res/img/dobaorez.png"
+      alt="Otevírací doba hospody"
+      id="doba"
+      draggable="false"
+    />
+
+    <img
+      src="./res/img/muzvhospode.png"
+      alt="Muž v hospodě"
+      id="muzvhospode"
+      draggable="false"
+    />
+
+    <div id="muzvhospodeinfo">
+      <ul>
+        <li>Jméno: Jaroslav Malý</li>
+        <br />
+        <li>Věk: 58 let</li>
+        <br />
+        <li>Rodinný stav: svobodný</li>
+        <br />
+        <li>Bydliště: Hospodská 445, Praha 4</li>
+        <br />
+        <li>Povolání: nezaměstnaný, nemá moc peněz</li>
+        <br />
+        <li>
+          Trestní rejstřík: V roce 2004 byl ve vězení na 18 měsíců za napadení a
+          ublížení na zdraví.
+        </li>
+        <br />
+        <li>Alibi: V den vraždy byl v hospodě do 22:43</li>
+        <br />
+        <li>Dovednosti: Řidičský průkaz nemá, ale řídit umí</li>
+        <br />
+        <button id="zavritmuzvhospodeinfo">Zavřít</button>
+      </ul>
+    </div>
 
     <center>
       <div id="dobainfo">
