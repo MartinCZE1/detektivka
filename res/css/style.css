@@ -3,6 +3,12 @@
   font-family: sans-serif;
 }
 
+#musicbtn {
+  float: right;
+  margin: 0.5%;
+  position: ;
+}
+
 #vstup {
   display: block;
 }
@@ -107,7 +113,6 @@ button {
   float: right;
   margin: 1%;
   margin-top: 25%;
-  margin-right: 25%;
   padding: 1%;
 }
 
@@ -187,7 +192,6 @@ button {
   border-radius: 10px;
   border: solid #000 1px;
   max-width: 40%;
-
 }
 
 #zavritmuzvhospodeinfo {

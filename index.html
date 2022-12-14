@@ -12,7 +12,18 @@
     />
     <title>Detektiv Peřina</title>
   </head>
-  <body>
+  <body id="body">
+    <audio
+      src="./res/music/Allégro - Emmit Fenn.mp3"
+      loop="true"
+      id="backgroundMusic"
+    ></audio>
+    <audio src="./res/music/Pen Clicking.mp3" id="audioClick"></audio>
+    <div id="musicbtn">
+      <button id="ztlumitMuziku">Ztlumit muziku</button>
+      <button id="zapnoutMuziku">Zapnout muziku</button>
+    </div>
+
     <div id="vstup">
       <center>
         <input type="text" placeholder="Vlož své jméno" id="jmeno" />
