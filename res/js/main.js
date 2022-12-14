@@ -60,6 +60,7 @@ hrat.onclick = () => {
   cross.style.display = "block";
   vstup.style.display = "none";
   audioClick.play();
+  
 };
 
 route1.onclick = () => {
