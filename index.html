@@ -13,10 +13,36 @@
     <title>Detektiv Peřina</title>
   </head>
   <body>
+    <audio
+      src="./res/music/Allégro - Emmit Fenn.mp3"
+      loop="true"
+      id="backgroundMusic"
+    ></audio>
+
+    <audio src="./res/music/Pen Clicking.mp3" id="audioClick"></audio>
+
+    <div id="musicbtn">
+      <button id="ztlumitMuziku">Ztlumit muziku</button>
+      <button id="zapnoutMuziku">Zapnout muziku</button>
+    </div>
+
+    <div id="vstup">
+      <center>
+        <input type="text" placeholder="Vlož své jméno" id="jmeno" />
+        <button id="jmenobtn">Další</button>
+      </center>
+
+      <p id="vstuptext"></p>
+
+      <center>
+        <button id="hrat">Hrát!</button>
+      </center>
+    </div>
+
     <div id="cross">
       <button id="route1" class="btn-route">K oběti</button>
-      <button id="route2" class="btn-route">K podezřelému č. 1</button>
-      <button id="route3" class="btn-route">K podezřelému č. 2</button>
+      <button id="route2" class="btn-route">Do hospody</button>
+      <button id="route3" class="btn-route">Do bytu</button>
     </div>
 
     <!--Konec křižovatky-->
@@ -35,7 +61,7 @@
           <br />
           <li>Rodina: ženatý, 8 dětí</li>
           <br />
-          <li>Bydliště: mjr. Plíška 652, Praha 4</li>
+          <li>Bydliště: mjr. Plíška 652, Modřany</li>
           <br />
           <li>Povolání: majitel autoservisu</li>
           <br />
@@ -52,15 +78,15 @@
           <br />
           <li>
             Svědkové: Kolem 21:15 slyšeli hádku dvou mužů a následně rány. Kolem
-            21:35 ze servisu odjelo auto oběti, na řidiče neviděli (pravěpodobně
-            vrah)
+            21:35 ze servisu odjelo auto oběti (Škoda Citigo, SPZ: 4A5 5685), na
+            řidiče neviděli.
           </li>
           <br />
           <li>
-            Nepřátelé: Josej Jánský - nezaplatil mu za servis jeho vozu
-            (pravěpodobně to po něm vymáhal), Karel Hojný - konkurence
+            Možní pachatelé: Jaroslav Malý, Karel Kojný, Arnošt Pardubický
           </li>
           <br />
+          <button id="zavritrakev">Zavřít</button>
         </ul>
       </div>
     </div>
@@ -71,7 +97,83 @@
       <button id="backhospoda" class="btn-servis">Zpět na křižovatku</button>
     </div>
 
-    <img src="./res/img/dobaorez.png" alt="Otevírací doba hospody" id="doba" draggable="false"/>
+    <img
+      src="./res/img/dobaorez.png"
+      alt="Otevírací doba hospody"
+      id="doba"
+      draggable="false"
+    />
+
+    <img
+      src="./res/img/muzvhospode.png"
+      alt="Muž v hospodě"
+      id="muzvhospode"
+      draggable="false"
+    />
+
+    <div id="muzvhospodeinfo">
+      <ul>
+        <li>Jméno: Jaroslav Malý</li>
+        <br />
+        <li>Věk: 58 let</li>
+        <br />
+        <li>Rodinný stav: svobodný</li>
+        <br />
+        <li>Bydliště: Hospodská 445, Praha 4</li>
+        <br />
+        <li>Povolání: nezaměstnaný, nemá moc peněz</li>
+        <br />
+        <li>
+          Trestní rejstřík: V roce 2004 byl ve vězení na 18 měsíců za napadení a
+          ublížení na zdraví.
+        </li>
+        <br />
+        <li>
+          Alibi: V den vraždy byl v hospodě do 19:00, poté šel s ostatními
+          štamgasty na fotbal, kde byl do 22:00 a zachytila ho zde bezpečnostní
+          kamera
+        </li>
+        <br />
+        <li>
+          Dovednosti: Řidičský průkaz nemá, ale řídit umí, nevejde se do malých
+          aut
+        </li>
+        <br />
+        <button id="zavritmuzvhospodeinfo">Zavřít</button>
+      </ul>
+    </div>
+
+    <img
+      src="./res/img/muzvhospode2.png"
+      alt="Muž v hospodě"
+      draggable="false"
+      id="muzvhospode2"
+    />
+
+    <div id="muzvhospode2info">
+      <ul>
+        <li>Jméno: Karel Kojný</li>
+        <br />
+        <li>Věk: 32 let</li>
+        <br />
+        <li>Rodinný stav: vdovec</li>
+        <br />
+        <li>Bydliště kpt. Anděla 5596, Modřany</li>
+        <br />
+        <li>Povolání: majitel konkurenčního autoservisu, peněz má dostatek</li>
+        <br />
+        <li>Trestní rejstřík: čistý</li>
+        <br />
+        <li>
+          Alibi: podle jeho výpovědi byl do 21:26 v hospodě. Pak šel domů.
+          Svědky nemá
+        </li>
+        <br />
+        <li>Dovednosti: vlastní řidičský průkaz.</li>
+        <br />
+        <button id="zavritmuzvhospode2info">Zavřít</button>
+      </ul>
+    </div>
 
     <center>
       <div id="dobainfo">
@@ -80,6 +182,10 @@
     </center>
 
     <!--Konec hospůdky-->
+
+    <div id="byt">
+      <button id="backbyt">Zpět na křižovatku</button>
+    </div>
 
     <script src="./res/js/main.js"></script>
   </body>
