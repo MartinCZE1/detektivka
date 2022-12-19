@@ -29,12 +29,12 @@
     <!-- Konec muziky -->
 
     <div id="vstup">
-      <center>
-        <input type="text" placeholder="Vlož své jméno" id="jmeno" />
-        <button id="jmenobtn">Další</button>
-      </center>
-
-      <p id="vstuptext"></p>
+      <p id="vstuptext">
+        Ahoj detektive. Dnes budeš mít za úkol objasnit vraždu majitele
+        autoservisu. Při vyšetřování si musíš všímat každého detailu, aby jsi
+        obvinil správného vraha. <br />
+        Hodně štěstí!
+      </p>
 
       <center>
         <button id="hrat">Hrát!</button>
@@ -63,7 +63,7 @@
           <br />
           <li>Rodina: ženatý, 8 dětí</li>
           <br />
-          <li>Bydliště: mjr. Plíška 652, Modřany</li>
+          <li>Bydliště: mjr. Plíška 652, Modřany, Praha 12</li>
           <br />
           <li>Povolání: majitel autoservisu</li>
           <br />
@@ -160,7 +160,7 @@
         <br />
         <li>Rodinný stav: vdovec</li>
         <br />
-        <li>Bydliště kpt. Anděla 5596, Modřany</li>
+        <li>Bydliště kpt. Anděla 5596, Modřany, Praha 4</li>
         <br />
         <li>Povolání: majitel konkurenčního autoservisu, peněz má dostatek</li>
         <br />
@@ -187,6 +187,61 @@
 
     <div id="byt">
       <button id="backbyt">Zpět na křižovatku</button>
+    </div>
+
+    <img
+      src="./res/img/muzvbyte.png"
+      alt="Muž v bytě"
+      id="muzvbyte"
+      draggable="false"
+    />
+
+    <div id="muzvbyteinfo">
+      <ul>
+        <li>Jméno: Arnošt Pardubický</li>
+        <br />
+        <li>Věk: 27 let</li>
+        <br />
+        <li>Rodinný stav: komplikovaný</li>
+        <br />
+        <li>Bydliště: Bohatých 554, Braník, Praha 4</li>
+        <br />
+        <li>Povolání: realitní makléř</li>
+        <br />
+        <li>Trestní rejstřík: 12 pokut za rychlost</li>
+        <br />
+        <li>Alibi: v den vraždy byl doma, svědky nemá</li>
+        <br />
+        <li>Dovednosti: vlastní řidičský a letecký průkaz</li>
+        <br />
+        <li><button id="zavritmuzvbyteinfo">Zavřít</button></li>
+        <br />
+      </ul>
+    </div>
+
+    <img
+      src="./res/img/obalka.png"
+      alt="Obálka"
+      id="obalka"
+      draggable="false"
+    />
+
+    <div id="pokuta">
+      <span id="pokutaHead"> Udělení pokuty za překročenou rychlost </span>
+      <br />
+      <span id="pokutaText">
+        Dne 6. května v 22:14 na Praze 16 jel pan Karel Kojný
+        <span id="pokutaRychlost72">72km/h</span> v zóně s rychlostním limitem
+        <span id="pokutaRychlost50">50km/h</span>. Svým jednáním se dopustil
+        přestupku a na místě byla vypsána pokuta. Dotyčný neměl dostatek peněz,
+        tudíž má týden počínaje datem spáchného přestupku na zaplacení.
+      </span>
+      <br />
+      <hr />
+      <span id="pokutaSPZ">SPZ: 4A5 5685</span>
+      <span id="pokutaCena">Pokuta činní: 5 000Kč</span> <br />
+      <span id="pokutaFooter">&copy; Policie České republiky</span>
+      <button id="pokutaZavrit">Zavřít</button>
     </div>
 
     <!-- Konec bytu -->

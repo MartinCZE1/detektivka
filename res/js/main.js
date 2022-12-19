@@ -3,10 +3,6 @@ const clickAudio = document.getElementById("clickAudio");
 const ztlumitMuziku = document.getElementById("ztlumitMuziku");
 const zapnoutMuziku = document.getElementById("zapnoutMuziku");
 
-const vstup = document.getElementById("vstup");
-const jmeno = document.getElementById("jmeno");
-const jmenobtn = document.getElementById("jmenobtn");
-const vstuptext = document.getElementById("vstuptext");
 const hrat = document.getElementById("hrat");
 
 const route1 = document.getElementById("route1");
@@ -27,7 +23,11 @@ const zavritmuzvhospode2info = document.getElementById(
 );
 const muzvhospode2 = document.getElementById("muzvhospode2");
 
+const muzvbyte = document.getElementById("muzvbyte");
+const zavritmuzvbyteinfo = document.getElementById("zavritmuzvbyteinfo");
 const backbyt = document.getElementById("backbyt");
+const obalka = document.getElementById("obalka");
+const pokutaZavrit = document.getElementById("pokutaZavrit");
 
 //Konec proměnných
 
@@ -45,17 +45,6 @@ zapnoutMuziku.onclick = () => {
 };
 
 //Konec muziky
-
-jmenobtn.onclick = () => {
-  const jmenoValue = jmeno.value;
-  vstuptext.innerText =
-    "Ahoj detektive " +
-    `${jmeno.value}` +
-    ", dnes budeš mít za úkol vyřesit vraždu majitele autoservisu. Při tvém vyšetřování narazíš na pár zvláštních lidí, okolností a předmětů a bude jen na tobě zjistit, kdo je vrah a zatknout toho pravého. Hodně štěstí.";
-  vstuptext.style.display = "block";
-  hrat.style.display = "block";
-  audioClick.play();
-};
 
 hrat.onclick = () => {
   cross.style.display = "block";
@@ -87,6 +76,9 @@ route3.onclick = () => {
   cross.style.display = "none";
   byt.style.display = "block";
   backbyt.style.display = "block";
+  muzvbyte.style.display = "block";
+  obalka.style.display = "block";
+  audioClick.play();
 };
 
 //Konec křižovatky
@@ -171,3 +163,35 @@ muzvhospode2.onclick = () => {
 };
 
 //Konec hospody
+
+backbyt.onclick = () => {
+  byt.style.display = "none";
+  cross.style.display = "block";
+  muzvbyte.style.display = "none";
+  obalka.style.display = "none";
+  muzvbyteinfo.style.display = "none";
+  audioClick.play();
+};
+
+muzvbyte.onclick = () => {
+  muzvbyteinfo.style.display = "block";
+  audioClick.play();
+};
+
+zavritmuzvbyteinfo.onclick = () => {
+  muzvbyteinfo.style.display = "none";
+  audioClick.play();
+};
+
+obalka.onclick = () => {
+  pokuta.style.display = "block";
+  byt.style.display = "none";
+  muzvbyteinfo.style.display = "none";
+  audioClick.play();
+};
+
+pokutaZavrit.onclick = () => {
+  pokuta.style.display = "none";
+  byt.style.display = "block";
+  audioClick.play();
+};
