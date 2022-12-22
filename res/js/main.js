@@ -8,6 +8,7 @@ const hrat = document.getElementById("hrat");
 const route1 = document.getElementById("route1");
 const route2 = document.getElementById("route2");
 const route3 = document.getElementById("route3");
+const route4 = document.getElementById("route4");
 
 const backservis = document.getElementById("backservis");
 const backhospoda = document.getElementById("backhospoda");
@@ -28,6 +29,25 @@ const zavritmuzvbyteinfo = document.getElementById("zavritmuzvbyteinfo");
 const backbyt = document.getElementById("backbyt");
 const obalka = document.getElementById("obalka");
 const pokutaZavrit = document.getElementById("pokutaZavrit");
+
+const rekognice1btn = document.getElementById("rekognice1btn");
+const rekognice2btn = document.getElementById("rekognice2btn");
+const rekognice3btn = document.getElementById("rekognice3btn");
+
+const zavritrekognice1 = document.getElementById("zavritrekognice1");
+const zavritrekognice2 = document.getElementById("zavritrekognice2");
+const zavritrekognice3 = document.getElementById("zavritrekognice3");
+
+const zatknout = document.getElementById("zatknout");
+
+const fightpolicista = document.getElementById("fightpolicista");
+const fightmuz = document.getElementById("fightmuz");
+
+const policistahpcounter = document.getElementById("policistahpcounter");
+const muzhpcounter = document.getElementById("muzhpcounter");
+
+let policistahp = 20;
+let muzhp = 20;
 
 //Konec proměnných
 
@@ -79,6 +99,11 @@ route3.onclick = () => {
   muzvbyte.style.display = "block";
   obalka.style.display = "block";
   audioClick.play();
+};
+
+route4.onclick = () => {
+  cross.style.display = "none";
+  rekognice.style.display = "block";
 };
 
 //Konec křižovatky
@@ -194,4 +219,46 @@ pokutaZavrit.onclick = () => {
   pokuta.style.display = "none";
   byt.style.display = "block";
   audioClick.play();
+};
+
+rekognice1btn.onclick = () => {
+  rekognice.style.display = "none";
+  rekognicebad1.style.display = "block";
+};
+
+rekognice2btn.onclick = () => {
+  rekognice.style.display = "none";
+  rekognicebad2.style.display = "block";
+};
+
+rekognice3btn.onclick = () => {
+  rekognice.style.display = "none";
+  rekogniceok.style.display = "block";
+};
+
+zavritrekognice1.onclick = () => {
+  rekognice.style.display = "block";
+  rekognicebad1.style.display = "none";
+};
+zavritrekognice2.onclick = () => {
+  rekognice.style.display = "block";
+  rekognicebad2.style.display = "none";
+};
+zavritrekognice3.onclick = () => {
+  rekognice.style.display = "block";
+  rekogniceok.style.display = "none";
+};
+
+zatknout.onclick = () => {
+  fight.style.display = "block";
+  rekogniceok.style.display = "none";
+  fightInterval = setInterval(() => {
+    policistahp--;
+    policistahpcounter.innerHTML = `Počet životů: ${policistahp}`;
+  }, 1000);
+};
+
+fightmuz.onclick = () => {
+  muzhp--;
+  muzhpcounter.innerHTML = `Počet životů: ${muzhp}`;
 };
