@@ -12,6 +12,8 @@ const route4 = document.getElementById("route4");
 
 const backservis = document.getElementById("backservis");
 const backhospoda = document.getElementById("backhospoda");
+const backbyt = document.getElementById("backbyt");
+const backrekognice = document.getElementById("backrekognice");
 
 const rakev = document.getElementById("rakev");
 const zavritrakev = document.getElementById("zavritrakev");
@@ -23,10 +25,8 @@ const zavritmuzvhospode2info = document.getElementById(
   "zavritmuzvhospode2info"
 );
 const muzvhospode2 = document.getElementById("muzvhospode2");
-
 const muzvbyte = document.getElementById("muzvbyte");
 const zavritmuzvbyteinfo = document.getElementById("zavritmuzvbyteinfo");
-const backbyt = document.getElementById("backbyt");
 const obalka = document.getElementById("obalka");
 const pokutaZavrit = document.getElementById("pokutaZavrit");
 
@@ -45,6 +45,8 @@ const fightmuz = document.getElementById("fightmuz");
 
 const policistahpcounter = document.getElementById("policistahpcounter");
 const muzhpcounter = document.getElementById("muzhpcounter");
+
+const novahra = document.getElementById("novahra");
 
 let policistahp = 20;
 let muzhp = 20;
@@ -104,6 +106,8 @@ route3.onclick = () => {
 route4.onclick = () => {
   cross.style.display = "none";
   rekognice.style.display = "block";
+  backrekognice.style.display = "block";
+  audioClick.play();
 };
 
 //Konec křižovatky
@@ -134,6 +138,7 @@ backhospoda.onclick = () => {
   muzvhospodeinfo.style.display = "none";
   audioClick.play();
   muzvhospode2.style.display = "none";
+  muzvhospode2info.style.display = "none";
 };
 
 backbyt.onclick = () => {
@@ -221,44 +226,100 @@ pokutaZavrit.onclick = () => {
   audioClick.play();
 };
 
+backrekognice.onclick = () => {
+  rekognice.style.display = "none";
+  cross.style.display = "block";
+  audioClick.play();
+};
+
 rekognice1btn.onclick = () => {
   rekognice.style.display = "none";
   rekognicebad1.style.display = "block";
+  audioClick.play();
 };
 
 rekognice2btn.onclick = () => {
   rekognice.style.display = "none";
   rekognicebad2.style.display = "block";
+  audioClick.play();
 };
 
 rekognice3btn.onclick = () => {
   rekognice.style.display = "none";
   rekogniceok.style.display = "block";
+  audioClick.play();
 };
 
 zavritrekognice1.onclick = () => {
   rekognice.style.display = "block";
   rekognicebad1.style.display = "none";
+  audioClick.play();
 };
 zavritrekognice2.onclick = () => {
   rekognice.style.display = "block";
   rekognicebad2.style.display = "none";
+  audioClick.play();
 };
 zavritrekognice3.onclick = () => {
   rekognice.style.display = "block";
   rekogniceok.style.display = "none";
+  audioClick.play();
+};
+
+const newGame = () => {
+  novahraInterval = setInterval(() => {
+    novahra.style.display = "block";
+    if ((novahra.style.display = "block")) {
+      clearInterval(novahraInterval);
+    }
+  }, 1000);
 };
 
 zatknout.onclick = () => {
   fight.style.display = "block";
   rekogniceok.style.display = "none";
+  audioClick.play();
   fightInterval = setInterval(() => {
     policistahp--;
     policistahpcounter.innerHTML = `Počet životů: ${policistahp}`;
+    if (policistahp <= 20) {
+      policistahpcounter.style.backgroundColor = "lime";
+    }
+    if (policistahp <= 10) {
+      policistahpcounter.style.backgroundColor = "orange";
+    }
+    if (policistahp <= 5) {
+      policistahpcounter.style.backgroundColor = "red";
+    }
+    if (policistahp == 0) {
+      clearInterval(fightInterval);
+      policistadead.style.display = "block";
+      fight.style.display = "none";
+      newGame();
+    }
   }, 1000);
 };
 
 fightmuz.onclick = () => {
   muzhp--;
   muzhpcounter.innerHTML = `Počet životů: ${muzhp}`;
+  if (muzhp <= 20) {
+    muzhpcounter.style.backgroundColor = "lime";
+  }
+  if (muzhp <= 10) {
+    muzhpcounter.style.backgroundColor = "orange";
+  }
+  if (muzhp <= 5) {
+    muzhpcounter.style.backgroundColor = "red";
+  }
+  if (muzhp == 0) {
+    clearInterval(fightInterval);
+    fight.style.display = "none";
+    muzdead.style.display = "block";
+    newGame();
+  }
+};
+
+novahra.onclick = () => {
+  window.location.reload();
 };

@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap");
+
 * {
   user-select: none;
-  font-family: sans-serif;
+  font-family: "Chivo Mono", monospace;
 }
 
 #musicbtn {
@@ -103,7 +105,6 @@ button {
   margin-left: 1%;
   margin-top: 1%;
   float: left;
-  border-radius: 10px;
 }
 
 #dead ul {
@@ -120,7 +121,6 @@ button {
   max-width: 40%;
   float: right;
   margin: 1%;
-  margin-top: 25%;
   margin-right: 23%;
   padding: 1%;
 }
@@ -151,7 +151,6 @@ button {
   margin-left: 1%;
   margin-top: 1%;
   float: left;
-  border-radius: 10px;
 }
 
 #doba {
@@ -225,8 +224,8 @@ button {
   background-color: #fff;
   border: solid #000 1px;
   width: fit-content;
-  margin-left: 50%;
-  margin-top: -30%;
+  margin-left: 40%;
+  margin-top: -35%;
   padding: 1%;
 }
 #muzvhospode2info ul {
@@ -335,8 +334,20 @@ hr {
 
 /* Konec bytu */
 
+#backrekognice {
+  display: none;
+  font-size: 28pt;
+  margin-left: 1%;
+  margin-top: 1%;
+  float: left;
+}
+
 #rekognice {
   display: none;
+  background-image: url(../img/policie.png);
+  height: 1080px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #rekognice button {
@@ -347,69 +358,173 @@ hr {
 #rekognice1 img {
   width: 20%;
   float: left;
+  margin-top: 20%;
+  margin-right: 2%;
 }
 
 #rekognice2 img {
   width: 30%;
   float: left;
+  margin-top: 20%;
 }
 
 #rekognice3 img {
   width: 35%;
   float: left;
+  margin-top: 18%;
+  margin-left: 2%;
 }
 
-#rekognicebad1 h2 {
-  text-align: center;
+#rekognice1 button {
+  margin-top: 20%;
+}
+
+#rekognice2 button {
+  margin-top: 20%;
+}
+
+#rekognice3 button {
+  margin-top: 20%;
 }
 
 #rekognicebad1 {
   display: none;
+  background-image: url(../img/mrize1.png);
+  height: 1080px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#rekognicebad1text h2 {
+  text-align: center;
+}
+
+#rekognicebad1text {
   border: solid 1px #000;
   padding: 1%;
   border-radius: 10px;
+  background-color: #fff;
 }
 
-#rekognicebad2 h2 {
+#rekognicebad2text h2 {
   text-align: center;
 }
 
 #rekognicebad2 {
   display: none;
+  background-image: url(../img/mrize2.png);
+  height: 1080px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#rekognicebad2text {
   border: solid 1px #000;
   padding: 1%;
   border-radius: 10px;
-}
-#rekogniceok h2 {
-  text-align: center;
+  background-color: #fff;
 }
 
 #rekogniceok {
   display: none;
+  background-image: url(../img/byt2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1080px;
+}
+
+#rekogniceoktext h2 {
+  text-align: center;
+}
+
+#rekogniceoktext {
   border: solid 1px #000;
   padding: 1%;
   border-radius: 10px;
+  background-color: #fff;
 }
 /* Konec rekognice */
 
 #fight {
   display: none;
+  background-image: url(../img/ring.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1080px;
 }
 
 #fightpolicista {
   width: 45%;
   float: left;
+  margin-top: 10%;
 }
 
 #fightmuz {
   width: 40%;
   float: right;
+  margin-top: 15%;
 }
 
 #policistahpcounter {
   float: left;
+  border: solid 1px #000;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.2s;
 }
 
 #muzhpcounter {
   float: right;
+  margin-top: 160px;
+  border: solid 1px #000;
+  padding: 0.5%;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+#policistadead h2 {
+  text-align: center;
+}
+
+#muzdead h2 {
+  text-align: center;
+}
+
+#policistadeadtext {
+  border: solid #000 1px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  padding: 1%;
+}
+
+#policistadead {
+  display: none;
+  background-image: url(../img/pohreb.png);
+  height: 1080px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#muzdead {
+  display: none;
+  background-image: url(../img/samotka.png);
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#muzdeadtext {
+  border: solid #000 1px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+#novahra {
+  display: none;
+  margin-top: -50%;
+  font-size: 24pt;
 }

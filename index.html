@@ -248,64 +248,116 @@
     <!-- Konec bytu -->
 
     <div id="rekognice">
+      <button id="backrekognice">Zpět</button>
       <div id="rekognice1">
-        <img src="./res/img/muzvhospode.png" alt="Muž v hospodě" />
-        <button id="rekognice1btn">Zatknout 1</button>
+        <img
+          src="./res/img/muzvhospode.png"
+          alt="Muž v hospodě"
+          draggable="false"
+        />
+        <button id="rekognice1btn">Zatknout Jaroslava</button>
       </div>
 
       <div id="rekognice2">
-        <img src="./res/img/muzvhospode2.png" alt="Muž v hospodě 2" />
-        <button id="rekognice2btn">Zatknout2</button>
+        <img
+          src="./res/img/muzvhospode2.png"
+          alt="Muž v hospodě 2"
+          draggable="false"
+        />
+        <button id="rekognice2btn">Zatknout Karla</button>
       </div>
 
       <div id="rekognice3">
-        <img src="./res/img/muzvbyte.png" alt="Muž v bytě" />
-        <button id="rekognice3btn">Zatknout3</button>
+        <img src="./res/img/muzvbyte.png" alt="Muž v bytě" draggable="false" />
+        <button id="rekognice3btn">Zatknout Arnošta</button>
       </div>
     </div>
 
     <div id="rekognicebad1">
-      <button id="zavritrekognice1">Zpět</button>
-      <h2>Zatknul jsi nevinného člověka!</h2>
-      <p>
-        Díky tvému nesprávnému obvinění jsi poslal do vězení nevinného člověka.
-        Zde strávil 4 roky. Po přezkoumání byl osvobozen, získal 10 milionů
-        korun jako odškodné a tvoje kariéra u policie skončila.
-      </p>
+      <div id="rekognicebad1text">
+        <button id="zavritrekognice1">Další šance</button>
+        <h2>Zatknul jsi nevinného člověka!</h2>
+        <p>
+          Díky tvému nesprávnému obvinění jsi poslal do vězení nevinného
+          člověka. Zde strávil 4 roky. Po přezkoumání byl osvobozen, získal 10
+          milionů korun jako odškodné a tvoje kariéra u policie skončila.
+        </p>
+      </div>
     </div>
 
     <div id="rekognicebad2">
-      <button id="zavritrekognice2">Zpět</button>
-      <h2>Zatknul jsi nevinného člověka!</h2>
-      <p>
-        Po tom co jsi zatknul nevinného člověka byl policií převezen do věznice,
-        aby si odpykal svůj trest ve výši 20 let. Tuto skutečnost psychicky
-        nezvládl a v cele spáchal sebevraždu oběšením prostěradlem pověšeným o
-        kliku dveří. Po jeho smrti byl případ přezkoumán a bylo zjištěno, že
-        původní obviněný nebyl vrah a ty jsi u policie skončil.
-      </p>
+      <div id="rekognicebad2text">
+        <button id="zavritrekognice2">Další šance</button>
+        <h2>Zatknul jsi nevinného člověka!</h2>
+        <p>
+          Po tom co jsi zatknul nevinného člověka byl policií převezen do
+          věznice, aby si odpykal svůj trest ve výši 20 let. Tuto skutečnost
+          psychicky nezvládl a v cele spáchal sebevraždu oběšením prostěradlem
+          pověšeným o kliku dveří. Po jeho smrti byl případ přezkoumán a bylo
+          zjištěno, že původní obviněný nebyl vrah a ty jsi u policie skončil.
+        </p>
+      </div>
     </div>
 
     <div id="rekogniceok">
-      <button id="zavritrekognice3">Zpět</button>
-      <h2>Chystáš se zatknout správného člověka!</h2>
-      <p>
-        Vypadá to, že tvoje pátrání bylo úspěšné. Teď ho zkus zatknout, ale pozor, může být agresivní!
-      </p>
-      <button id="zatknout">Zatknout</button>
+      <div id="rekogniceoktext">
+        <button id="zavritrekognice3">Zpět</button>
+        <h2>Chystáš se zatknout správného člověka!</h2>
+        <p>
+          Vypadá to, že tvoje pátrání bylo úspěšné. Zkus ho zatknout u něho
+          doma, ale radši si dej pozor. Pravděpodobně se mu moc chtít nebude.
+          Tobě by se taky určitě nechtělo a tak může být agrasivní!
+        </p>
+        <button id="zatknout">Zatknout</button>
+      </div>
     </div>
 
-<div id="fight">
-  <div id="fightpolicista">
-  <img src="./res/img/policista.png" alt="Policista" id="fightpolicista">
-  <p id="policistahpcounter">Počet životů: 20</p>
-</div>
-<div>
-  <img src="./res/img/muzvbyte.png" alt="Muž v bytě" id="fightmuz">
-  <p id="muzhpcounter">Počet životů: 20</p>
-</div>
-</div>
+    <div id="fight">
+      <div id="fightpolicista">
+        <img
+          src="./res/img/policista.png"
+          alt="Policista"
+          id="fightpolicista"
+          draggable="false"
+        />
+        <p id="policistahpcounter">Počet životů: 20</p>
+      </div>
+      <div>
+        <img
+          src="./res/img/muzvbyte.png"
+          alt="Muž v bytě"
+          id="fightmuz"
+          draggable="false"
+        />
+        <p id="muzhpcounter">Počet životů: 20</p>
+      </div>
+    </div>
 
+    <div id="policistadead">
+      <div id="policistadeadtext">
+        <h2>Nepodařilo se ti splnit úkol</h2>
+        <p>
+          Podezřelý byl příliš silný a podařilo se mu způsobit ti taková
+          zranění, která nebyla slučitelná s životem. Snažili se ti pomoci
+          celosvětové kapacity, ale i tak jsi zemřel.
+        </p>
+      </div>
+    </div>
+
+    <div id="muzdead">
+      <div id="muzdeadtext">
+        <h2>Podařilo se ti splnit úkol</h2>
+        <p>
+          Tvé roky výcviku se vyplatily. Po intenzivním dvaceti minutovém boji
+          se ti povedlo porazit vraha. Přežil to, ale myslím, že smrt by pro něj
+          byla lepší. Po vleklém soudu byl uvězněn na Mírově, kde bude do konce
+          svéh života, ještě k tomu na samotce.
+        </p>
+      </div>
+    </div>
+    <center>
+      <button id="novahra">Zahájit novou hru?</button>
+    </center>
     <script src="./res/js/main.js"></script>
   </body>
 </html>
