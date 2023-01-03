@@ -257,7 +257,7 @@ button {
 #muzvbyte {
   width: 45%;
   margin-top: -60%;
-  margin-left: 0%;
+  margin-left: 10%;
   position: absolute;
   display: none;
   cursor: pointer;
@@ -277,7 +277,7 @@ button {
   display: none;
   width: fit-content;
   margin-top: -70%;
-  margin-left: 45%;
+  margin-left: 40%;
   position: absolute;
 }
 
@@ -472,6 +472,7 @@ hr {
   border-radius: 10px;
   background-color: #fff;
   transition: 0.2s;
+  background-color: lime;
 }
 
 #muzhpcounter {
@@ -482,6 +483,7 @@ hr {
   border-radius: 10px;
   background-color: #fff;
   transition: 0.2s;
+  background-color: lime;
 }
 
 #policistadead h2 {

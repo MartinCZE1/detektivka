@@ -120,6 +120,7 @@ backservis.onclick = () => {
   backservis.style.display = "none";
   cross.style.display = "block";
   servis.style.display = "none";
+  dead.style.display = "none"
   audioClick.play();
 };
 
@@ -205,11 +206,13 @@ backbyt.onclick = () => {
 
 muzvbyte.onclick = () => {
   muzvbyteinfo.style.display = "block";
+  obalka.style.display = "none";
   audioClick.play();
 };
 
 zavritmuzvbyteinfo.onclick = () => {
   muzvbyteinfo.style.display = "none";
+  obalka.style.display = "block";
   audioClick.play();
 };
 
